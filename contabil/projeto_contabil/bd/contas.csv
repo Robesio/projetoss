@@ -1,0 +1,17 @@
+1;Débito;Despesa;Pagamento de Aluguél
+2;Débito;Despesa;Pagamento de Conta de Água
+3;Débito;Despesa;Pagamento de Conta de Energia Elétrica
+4;Débito;Despesa;Pagamento de Conta de Telefone
+5;Débito;Despesa;Pagamento de Conta de Internet
+6;Débito;Despesa;Pagamento de Salário
+7;Débito;Despesa;Pagamento de Multa
+8;Débito;Investimento;Aporte de Investimento em Ações
+9;Débito;Investimento;Aporte de Investimento em Renda Fixa
+10;Débito;Investimento;Compra direta de Matéria Prima à vista
+11;Débito;Investimento;Compra de Equipamentos
+12;Débito;Investimento;Pagamento de Fatura a Fornecedor
+13;Crédito;Receita;Venda diréta à vista
+14;Crédito;Receita;Recebimento de Parcela de Venda à praso
+15;Crédito;Receita;Recebimento de Juros por atraso em parcela
+16;Crédito;Receita;Recebimento de Rendimento em investimento
+23;Credito ;receita;receimento
