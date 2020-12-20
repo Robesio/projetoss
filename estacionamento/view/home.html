@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="home.css" />
+</head>
+
+<body onload="carregarVeiculos(),carregarVaga_estaci()">
+	<div class="table1">
+		<table>
+			<thead>
+				<tr>
+					<th colspan="4">Gerenciar Veiculo</th>
+				</tr>
+				<tr>
+					<th>Id_ve</th>
+					<th>Placa</th>
+					<th>Veiculo</th>
+					<th>Ações</th>
+				</tr>
+			</thead>
+			<tbody id="veiculos">
+			</tbody>
+			<tfoot>
+				<tr>
+					<td class="td">Auto</td>
+					<td><input type="text" placeholder="Placa" id="placa"></td>
+					<td><select id="tipoVeiculo">
+							<option value="CARRO">CARRO</option>
+							<option value="MOTO">MOTO</option>
+						</select></td>
+					<td><input type="button" value="ADD" onclick="addVeiculo()"></td>
+				</tr>
+			</tfoot>
+		</table>
+	</div>
+
+	<div class="table2">
+		<p class="msg" id="mensagem">Mensagens do Sistema</p>
+		<table>
+			<thead>
+				<tr>
+					<th colspan="7">Gerenciar Vagas no Estacionamento</th>
+				</tr>
+				<tr>
+					<th>Id_es</th>
+					<th>Id_ve</th>
+					<th>Data</th>
+					<th>Hora_e</th>
+					<th>Hora_s</th>
+					<th>val h R$</th>
+					<th>Ações</th>
+				</tr>
+			</thead>
+			<tbody id="estacionamento">
+			</tbody>
+			<tfoot>
+				<tr>
+					<td class="td">Auto</td>
+					<td><input type="number" placeholder="Id_ve" id="id_ve"></td>
+					<td><input type="date" id="data" disabled></td>
+					<td><input type="time" id="hora_e" disabled></td>
+					<td><input type="time" id="hora_s"></td>
+					<td><input type="number" placeholder="R$10h" id="valor" disabled></td>
+					<td><input type="button" value="CRIAR" onclick="addVaga_estaci()"></td>
+				</tr>
+			</tfoot>
+		</table>
+	</div>
+	<script src="home.ts"></script>
+</body>
+
+</html>
