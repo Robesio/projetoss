@@ -28,10 +28,10 @@ export class HomePage {
   }
 
   logar() {
-    if (this.login == "admim" && this.senha == "admim") {
+    if (this.login == "admin" && this.senha == "admin") {
       this.navCtrl.setRoot("AdministradorPage");
     } else {
-      if (this.login != "" && this.senha != "admim" || this.login != "admim" && this.senha != "" && this.login != "" && this.senha != "" || this.login != "" && this.senha != "") {
+      if (this.login != "" && this.senha != "admin" || this.login != "admin" && this.senha != "" && this.login != "" && this.senha != "" || this.login != "" && this.senha != "") {
         this.presenAlert("Por favor preencha Com o Login e Senha Cadastrado !");
       }
     }
