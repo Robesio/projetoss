@@ -1,0 +1,24 @@
+1 - Para abrir o formulário clicar no botão "ABRIR FORMULÁRIO"
+
+2 - No campo "Valor Total Material" irá colocar o valor total da peça, 
+	Exemplo: uma peça de acrilico de 10 metros com valor de 300 reais, você irá colocar '300'.
+
+3 - No campo "Quantidade Metro" irá colocar o metro da peça, usando o exemplo anterior, 10.
+
+4 - O sistema irá calcular e mostrar o resultado no campo "Valor Metro", no mesmo exemplo irá retornar 30 reais cada 1 metro.
+
+5 - No campo "Quantidade Usada (m)" irá inserir a quantidade em metros que foi usada para desenvolver o produto.
+
+6 - No campo "Hora Máquina" você irá inserir um valor que deseja cobrar por hora da máquina.
+
+7 - No campo "Hora Operador" você irá inserir um valor da mão de obra.
+
+8 - No campo "Valor Final" irá retornar o calculo ( Quantidade Usada * Valor Metro + Hora Máquina + Hora Operador ).
+
+9 - Caso deseje salvar o produto em uma tabela preencha o nome do produto no campo "Produto".
+
+10 - No campo "Descrição" irá inserir a descrição do produto.
+
+11 - Após preencher os dados irá clicar no botão "SALVAR".
+
+12 - Para fecha o formulário irá clicar no botão "SAIR".	
