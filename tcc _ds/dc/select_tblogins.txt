@@ -1,0 +1,14 @@
+SELECT tblogins.id_ca, idti_lo, nome, email FROM tblogins 
+INNER JOIN tbcadastro ON tblogins.id_ca = tbcadastro.id_ca
+WHERE tbcadastro.email = "teste@teste" AND tblogins.senha = '999';
+
+Funcionamento do select:
+quando uma coluna com o mesmo nome existe em duas tabelas, você tem que especificar
+a coluna e da qual tabela deseja refenciar; colocar os nomes das colunas que deseja 
+visualizar, INNER JOIN trás os dados que estão relacionados entre duas tabelas,
+ON; oque é igual nas duas tabelas. 
+
+
+SELECT tblogins.id_ca, idti_lo, tbcadastro.nome, email FROM tblogins 
+INNER JOIN tbcadastro ON tblogins.id_ca = tbcadastro.id_ca
+WHERE tbcadastro.email = "teste@teste" AND tblogins.senha = '1234'

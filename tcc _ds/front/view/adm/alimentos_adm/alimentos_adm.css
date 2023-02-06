@@ -1,0 +1,76 @@
+@import "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
+div {
+    text-align: center;
+}
+.msg {
+    border: 1px solid;
+    border-radius: 4px;
+    margin: 0 35%;
+    width: 460px;
+    text-align: center;
+    font-size: 1.2em;
+}
+.table1 {
+    font-size: 1em;
+    border-radius: 4px;
+    margin: 25px 0 0 100px;
+    /*border: 1px solid;*/
+}
+th { 
+    font-size: 1em;
+    padding: 7px;
+    border: 1px solid;
+    border-radius: 4px;
+}
+.tamanho {
+    width: 100px;
+}
+td { 
+    font-size: 1em;
+    padding: 7px;
+    border: 1px solid;
+    border-radius: 4px;
+}
+
+td input[type="text"] {
+    width: 120px;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 4px;
+    padding: 5px;
+    font-size: 0.7em;
+    outline: none;
+    background: #fdfdfd83;
+    color: rgb(0, 0, 0);
+}
+td input[type="number"] {
+    width: 100px;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 4px;
+    padding: 5px;
+    font-size: 0.7em;
+    outline: none;
+    background: #fdfdfd83;
+    color: rgb(0, 0, 0);
+}
+td input[type="button"] {
+    width: 120px;
+    padding: 5px;
+    font-size: 1em;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 4px;
+    color: rgb(255, 255, 255);
+    background: #ffaf36a6; 
+    text-shadow: rgb(0, 0, 0) 2px 1px 2px;
+}
+::placeholder{
+    font-size: 1em;
+    color: rgb(0, 0, 0);
+}
+button {
+    font-size: 1em;
+    border-radius: 8px;
+    color: white;
+    background: #ffaf36a6; 
+    text-shadow: rgb(0, 0, 0) 2px 1px 2px;
+    padding: 4px 23px;
+}

@@ -1,0 +1,8 @@
+Editar a documentação do projeto ecosystem, com as informações do projeto gulaonline, a documentação tá no github repositório 'ds_tcc' pasta 'dc' pasta 'exemplos'.
+Os dois exemplos de documentação que estão no github e do 3DES que se formou ano passado, a documentação do gulaonline terá que ter tudo que tem nessas documentação.
+ Arquivo que irão ser adicionado na documentação estão na pasta 'dc':
+	Matriaz swot,
+	Requisitos,
+	DER conceitual,
+	DER lógico.
+Qualquer dúvida entrem em contato.

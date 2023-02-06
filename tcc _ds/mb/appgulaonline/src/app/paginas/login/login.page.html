@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-toolbar color="danger">
+    <ion-title>Login</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div>
+    <ion-item>
+      <ion-label position="floating" class="fon">Email <ion-icon name="mail" slot="start">
+        </ion-icon>
+      </ion-label>
+      <ion-input class="fon"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating" class="fon">Senha <ion-icon name="key" slot="start">
+        </ion-icon>
+      </ion-label>
+      <ion-input class="fon"></ion-input>
+    </ion-item>
+  </div>
+  <ion-button color="danger" shape="round" fill="outline" (click)="acessar('home')">Logar</ion-button>
+  <ion-button color="danger" shape="round" fill="outline" (click)="acessar('cadastro')">Cadastrar-se</ion-button>
+</ion-content>

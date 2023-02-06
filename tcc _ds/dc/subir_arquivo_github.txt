@@ -1,0 +1,19 @@
+Puxar ultimas alterações 
+
+	git pull
+
+ver arquivos ou pastas que foram alteradas: 
+
+	git status
+
+adicionar as alterações para enviar:  
+
+	git add .
+
+da um commit escrever um comentário:
+
+	git commit -m "comentario entre as aspas dupla"
+
+comando para subir as alterações para o github:
+
+	git push

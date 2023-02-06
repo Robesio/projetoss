@@ -1,0 +1,48 @@
+			BACK END						FRONT END
+tbali_has_tbped			tbalimentos			tbalimentos		OK
+readAll		OK		readAll		OK		readAll			OK
+read		OK		read		OK		delete			OK
+delete		OK		delete		OK		update			OK Obs: problema na hora de alterar a imagem
+update		OK 		update		OK		create			OK Obs: tirar o campo do id do cadastrante, como ele tá logado já puxar direto
+create		OK		create		OK
+
+obs:A tbali_has_tbped tá editando por 				tbcadastro
+alimento, independente do id do pedido 				read			OK
+								delete			OK
+tbstatus			tbtipos_logins			update			OK
+readAll		OK		readAll		OK		create			OK
+read		OK		read		OK
+delete		OK 		delete		OK		tbstatus
+update		OK		update		OK		
+create		OK		create		OK		
+
+tbpedido			tbcadastro
+readAll		OK		readAll		OK
+read		OK		read		OK
+delete		OK 		delete		OK
+update		OK		update		OK
+create		OK		create		OK
+
+
+			MOBILE - TELAS
+
+tela de login		OK
+tela de cadastro	OK
+tela home 		NOT OK: listar todas as empresas cadastrada na home
+tela alimentos		NOT OK: listar todos os alimentos refente a opção selecionada na pagina home
+tela meu pedido		NOT OK: ver o pedido feito
+tela ajuda		NOT OK: essa tela tem por objetivo orientar como funcinar o appgulaonine, uma tela bonus caso sobre tempo
+tela perfil		NOT OK: onde o usuario vai poder tá visualizando e alterando alguma informação referente aos seus dados caso queira
+
+
+			METAS DIA 29-04
+Fazer os dados da tbcadastro retornar em um formulario.
+FASER O LOCAL.STORAGE PARA PEGAR O ID_CA NA HORA DE ADD UM ALIMENTO.	OK
+
+http://www.bosontreinamentos.com.br/
+<address>Apache/2.4.46 (Win64) OpenSSL/1.1.1h PHP/7.3.27 Server at localhost Port 80</address>
+http://opensource.locaweb.com.br/locawebstyle-v2/manual/formularios/forca-de-senha/
+
+Senha de acesso ecosystem:
+cpf 43947209070
+senha 070

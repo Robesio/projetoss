@@ -1,0 +1,15 @@
+Acesso total:
+Email:	gulaonline@.com.br
+Senha:	11
+
+Acesso adm empresa:
+Email:	ricardo@gmail.com.br
+Senha:	22
+
+Acesso adm empresa:
+Email:	rodolfo@gmail.com.br
+Senha:	33
+
+Acesso comum:
+Email:	maria@gmail.com.br
+Senha:	44

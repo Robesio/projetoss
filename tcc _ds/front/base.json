@@ -1,0 +1,74 @@
+{
+	"Connection" : {
+		"Headers" : {
+			"Content-type" : "application/json; charset=UTF-8",
+			"Access-Control-Allow-Origin" : "http://localhost/",
+			"Access-Control-Allow-Methods" : "GET, PUT, POST, DELETE"
+		}
+	},
+	"Database" : {
+		"host" : "localhost",
+		"port" : "3306",
+		"dbname" : "bdgulaonline",
+		"user" : "root",
+		"password" : ""
+	},
+	"Class" : [
+		{
+			"name" : "tbcadastro", 
+			"attributes" : [
+				"id_ca",
+				"nome",
+				"cpf",
+				"fone",
+				"bairro",
+				"rua",
+				"numero",
+				"cidade",
+				"uf",
+				"cnpj",
+				"linksite",
+				"email",
+				"senha",
+				"tipo",
+				"nomestatus"
+			]
+		},
+		{
+			"name" : "tbpedido",
+			"attributes" : [
+				"idpedido",
+				"id_ca",
+				"nomecli",
+				"fonecli",
+				"ruacli",
+				"numerocli",
+				"bairrocli",
+				"datahora",
+				"idstatus"
+			]
+		},
+		{
+			"name" : "tbalimentos",
+			"attributes" : [
+				"idali",
+				"id_ca",
+				"nomeali",
+				"descricao",
+				"qtd",
+				"preco",
+				"img"
+			]
+		},
+		{
+			"name" : "tbali_has_tbped",
+			"attributes" : [
+				"idali",
+				"idpedido",
+				"qtdcli"
+				
+			]
+		}
+		
+	]
+}

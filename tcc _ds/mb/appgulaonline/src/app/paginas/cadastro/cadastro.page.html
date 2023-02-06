@@ -1,0 +1,82 @@
+<ion-header>
+  <ion-toolbar color="danger">
+    <ion-title>Formulário de Cadastro</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item>
+    <ion-label position="floating" class="fon">Nome
+      <ion-icon name="person" slot="start"></ion-icon>
+    </ion-label>
+    <ion-input class="fon"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating" class="fon">CPF <ion-icon name="id-card" slot="start"></ion-icon>
+    </ion-label>
+    <ion-input type="number" class="fon"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating" class="fon">Fone <ion-icon name="call" slot="start"></ion-icon>
+    </ion-label>
+    <ion-input type="number" class="fon"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating" class="fon">Bairro <ion-icon name="storefront" slot="start"></ion-icon>
+    </ion-label>
+    <ion-input class="fon"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating" class="fon">Rua <ion-icon name="storefront" slot="start"></ion-icon>
+    </ion-label>
+    <ion-input class="fon"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating" class="fon">Número <ion-icon name="storefront" slot="start"></ion-icon>
+    </ion-label>
+    <ion-input class="fon"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating" class="fon">Cidade <ion-icon name="business" slot="start"></ion-icon>
+    </ion-label>
+    <ion-input class="fon"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating" class="fon">UF <ion-icon name="business" slot="start"></ion-icon>
+    </ion-label>
+    <ion-input class="fon"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating" class="fon">CNPJ <ion-icon name="business" slot="start"></ion-icon>
+    </ion-label>
+    <ion-input value="000000000000000" disabled></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating" class="fon">LinkSite <ion-icon name="wifi" slot="start"></ion-icon>
+    </ion-label>
+    <ion-input value="000000000000000" disabled></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating" class="fon">Email <ion-icon name="mail" slot="start"></ion-icon>
+    </ion-label>
+    <ion-input class="fon"></ion-input>
+  </ion-item>
+
+  <ion-list>
+    <ion-item>
+      <ion-label class="fon">Tipo <ion-icon name="person" slot="start"></ion-icon>
+      </ion-label>
+      <ion-select multiple="true" [value]="['Usuário Comum']">
+        <ion-select-option value="bird">Usuário Comum</ion-select-option>
+      </ion-select>
+    </ion-item>
+  </ion-list>
+
+  <ion-item>
+    <ion-label position="floating" class="fon">Senha <ion-icon name="key" slot="start"></ion-icon>
+    </ion-label>
+    <ion-input class="fon"></ion-input>
+  </ion-item>
+  <ion-button color="danger" shape="round" fill="outline" (click)="voltar('home')">Cadastrar-se</ion-button>
+  <ion-button color="danger" shape="round" fill="outline" (click)="voltar('login')">Voltar</ion-button>
+</ion-content>

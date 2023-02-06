@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="pedido.css" />
+  <title>Gula Online</title>
+</head>
+
+<body onload="carregaPedidos()">
+  <p class="msg" id="mensagem">Mensagens do Sistema</p>
+  <div class="table1">
+    <table>
+      <thead>
+        <tr>
+          <th colspan="10"> Pedidos </th>
+        </tr>
+        <tr>
+          <th>IdPed</th>
+          <th>IdCa</th>
+          <th>Nome</th>
+          <th>Telefone</th>
+          <th>Endereço</th>
+          <th>Numero</th>
+          <th>Bairro</th>
+          <th>Ano/Mês/Hora</th>
+          <th>IdStatus</th>
+          <th>Ações</th>
+        </tr>
+      </thead>
+      <tbody id="tbped"></tbody>
+      <!--ref 1-->
+      <tfoot>
+        <tr>
+          <td>Auto</td>
+          <td><input type="number" placeholder="Id_ca" id="id_ca" /> </td>
+          <td><input type="text" placeholder="Cliente" id="nomecli" /></td>
+          <td><input type="text" placeholder="Telefone" id="fonecli" /></td>
+          <td><input type="text" placeholder="Endereço" id="ruacli" /></td>
+          <td><input type="number" placeholder="Numero" id="numerocli" /></td>
+          <td><input type="text" placeholder="Bairro" id="bairrocli" /></td>
+          <td><input type="text" placeholder="Ano/Mês/Hora" id="datahora" /></td>
+          <td><input type="number" placeholder="Status" id="idstatus" /></td>
+          <td><input type="button" value="Adicionar" onclick="addPedido()" /></td>
+        </tr>
+      </tfoot>
+    </table>
+  </div>
+  <script src="pedido.js"></script>
+</body>
+
+</html>

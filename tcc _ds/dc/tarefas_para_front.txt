@@ -1,0 +1,7 @@
+Janderson - ian - Robésio
+Desenvolver o front end que vai comunicar com o back end:
+	janderson - tbpedido
+	Ian	  - tbstatus
+	Robésio   - tbcadastro e tbalimentos
+
+exemplo para ta desenvolvendo o front end, ta na pasta 'exemplos' no github:

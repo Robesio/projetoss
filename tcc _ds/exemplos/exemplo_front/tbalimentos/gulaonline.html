@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="gulaonline.css" />
+  <title>Gula Online</title>
+</head>
+
+<body onload="carregaAlimentos()">
+
+  <div class="table1">
+    <table>
+      <thead>
+        <tr>
+          <th colspan="8"> Alimentos </th>
+        </tr>
+        <tr>
+          <th>IdAli</th>
+          <th>IdCa</th>
+          <th>Nome</th>
+          <th>Descrição</th>
+          <th>Qtd kg/uni</th>
+          <th>Preço</th>
+          <th>Imagem</th>
+          <th>Ações</th>
+        </tr>
+      </thead>
+      <tbody id="tbali"></tbody>
+      <tfoot>
+        <tr>
+          <td>Auto</td>
+          <td><input type="number" placeholder="Id_ca" id="id_ca" /> </td>
+          <td><input type="text" placeholder="Alimento" id="nomeali" /></td>
+          <td><input type="text" placeholder="Descrição" id="descricao" /></td>
+          <td><input type="number" placeholder="Qtd kg/uni" id="qtd" /> </td>
+          <td><input type="number" placeholder="Preço" id="preco" /></td>
+          <td><input type="file" name="foto" id="img" onchange="previewFile()" /></td>
+          <td><input type="button" value="Adicionar" onclick="addAlimento()" /></td>
+        </tr>
+      </tfoot>
+    </table>
+  </div>
+  <script src="gulaonline.js"></script>
+</body>
+
+</html>

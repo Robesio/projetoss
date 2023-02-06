@@ -1,0 +1,271 @@
+body {
+    background-color: #ececec;
+    background-image: url("../resources/img/wallpaper.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+footer {
+    background-color: #000039;
+    color: white;
+}
+
+header {
+    height: 130px;
+    background-color: #FF8C00;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo {
+  width: 180px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header .logo img {
+  height: 90%;
+}
+
+header .title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    color: rgb(255, 255, 255);
+    font-size: 60px;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+header .options {
+    width: 200px;
+    display: flex;
+    font-size: 15px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+header .options input {
+    width: 150px;
+    height: 30px;
+    margin: 5px;
+    background: none;
+    border-radius: 30px;
+    border: #6368a1 2px solid;
+    color: #ffffff;
+    outline: none;
+    cursor: pointer;
+    transition: 300ms;
+}
+
+header .options input:hover {
+    width: 180px;
+    height: 50px;
+    background: #232374;
+    color: #ffffff;
+}
+
+h1, h3{
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+
+h2{
+    text-align: center;
+}
+
+a{
+    color: #000;
+    text-align: justify;
+}
+.contact{
+  font-size: 20px;
+  color: #fff;
+}
+.contact h1, h3{
+  color: #fff;
+}
+.contact img{
+  width: 60px;
+}
+.icon-contact {
+      background-color: white;
+      border-radius: 50%;
+      border: solid 2px white;
+      margin: 5px;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container .element {
+  margin: 60px;
+  display: flex;
+  width: 15%;
+  padding: 10px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: dashed 2px #000000;
+}
+
+.container .element img {
+  width: 130px;
+  border-radius: 100%;
+  border-width: 100%;
+}
+
+.container .back1 {
+  background-color: #ff9aa2;
+}
+
+.container .back2 {
+  background-color: #ffdac1;
+}
+
+.container .back3 {
+  background-color: #e2f0cb;
+}
+
+.container .back4 {
+  background-color: #b5ead7;
+}
+
+.container .back5 {
+  background-color: #c7ceea;
+}
+
+.benditoP {
+  font-size: 20px;
+  text-align: justify;
+  padding: 80px;
+}
+@media (max-width: 950px) {
+      .iconimgs {
+          margin: 20px;
+      }
+
+      .iconimg {
+          margin: 10px;
+          padding: 10px;
+      }
+
+      .iconimg img {
+          width: 150px;
+          height: 120px;;
+          border: solid 2px #000000;
+      }
+
+      .iconimg p{
+          margin-top: 20px;
+      }
+  }
+
+  .icon-contact {
+      background-color: white;
+      border-radius: 50%;
+      border: solid 2px white;
+      margin: 5px;
+  }
+
+  .login_input_sweet input{
+      margin: 10px;
+  }
+  .container img{
+  width: 140px;
+  position: relative;
+  align-items: center;
+}
+
+.iconimgs {
+  margin: 50px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+.iconimg {
+  margin: 20px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  border: dashed 2px #000;
+  cursor: pointer;
+}
+
+.iconimg:hover {
+  border-style: solid;
+}
+
+.iconimg img {
+  width: 250px;
+  height: 200px;
+  border: solid 2px #000000;
+}
+
+.iconimg p {
+  margin-top: 20px;
+  text-transform: uppercase;
+}
+
+.contact img {
+  width: 60px;
+}
+
+.carousel-item {
+  width: 72vw;
+  height: 40vh;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 950px) {
+  .iconimgs {
+    margin: 20px;
+  }
+
+  .iconimg {
+    margin: 10px;
+    padding: 10px;
+  }
+
+  .iconimg img {
+    width: 150px;
+    height: 120px;
+    ;
+    border: solid 2px #000000;
+  }
+
+  .iconimg p {
+    margin-top: 20px;
+  }
+}
+
+.icon-contact {
+  background-color: white;
+  border-radius: 50%;
+  border: solid 2px white;
+  margin: 5px;
+}
+
+.login_input_sweet input {
+  margin: 10px;
+}
