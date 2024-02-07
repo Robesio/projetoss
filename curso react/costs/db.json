@@ -1,0 +1,33 @@
+{
+  "projects": [
+    {
+      "name": "Site prestador de serviços",
+      "budget": "10000",
+      "category": {
+        "id": "2",
+        "name": "Desonvolvimento"
+      },
+      "cost": 0,
+      "services": [],
+      "id": 1
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "name": "Infra"
+    },
+    {
+      "id": 2,
+      "name": "Desonvolvimento"
+    },
+    {
+      "id": 3,
+      "name": "Design"
+    },
+    {
+      "id": 4,
+      "name": "Planejamento"
+    }
+  ]
+}

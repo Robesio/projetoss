@@ -1,0 +1,141 @@
+@import "../style.css";
+
+h1 {
+  margin: 0;
+}
+
+main{
+    margin-top: 15px;
+}
+
+.container_cabecalho {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  align-items: center;
+  text-align: center;
+  padding: 0.2rem;
+  word-break: break-all;
+  background: #0B2447;
+}
+
+.text{
+    color: var(--cor-da-fonte-menu);
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container-item {
+  width: 98%;
+  margin: 8px;
+  text-align: center;
+  border-radius: 10px;
+  background: #0B2447;
+  border-radius: 10px;
+  font-size: 17pt;
+  color: var(--cor-da-fonte-menu);
+}
+
+.linha-item {
+  font-size: 1.25rem;
+  padding: 0.25rem;
+}
+
+.item-acoes {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0.25rem 0;
+}
+
+input.checkbox-acoes {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.div {
+  display: none;
+}
+
+.Formulario__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.5rem;
+  margin-top: 3rem;
+}
+
+#input_item,
+#input_qtd {
+  padding: 0.5rem;
+  font-size: 1.3rem;
+}
+
+.container-botao {
+  width: 100%;
+  margin: 0 1rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+.Botao-form {
+  background-color: var(--cor-de-fundo-menu);
+  color: var(--cor-da-fonte-menu);
+  width: 7.37rem;
+  height: 3.25rem;
+  font-size: 1rem;
+  border-radius: 10px;
+  border: 1px var(--cor-de-fundo-menu) solid;
+}
+
+@media screen and (min-width:800px) {
+  main {
+    width: 50rem;
+    margin: auto;
+  }
+
+  .item {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .container-item {
+    width: 23.85rem;
+    word-wrap: break-word;
+  }
+
+  .fa:hover {
+    cursor: pointer;
+    font-size: 2.1rem;
+  }
+
+  #div {
+    width: 30rem;
+    margin: auto;
+  }
+
+  .Titulo__Principal {
+    margin: 0;
+  }
+
+  .Botao-form:hover {
+    cursor: pointer;
+    transition: 0.5s;
+    color: var(--cor-de-fundo-menu);
+    background-color: white;
+    border: 1px solid var(--cor-de-fundo-menu);
+  }
+  
+  .container_cabecalho {
+      background: var(--cor-da-fonte-menu);
+  }
+  
+  .text{
+    color: var(--cor-de-fundo-menu);
+  }
+
+}

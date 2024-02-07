@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="./img/logo.jpg">
+  <link rel="stylesheet" href="home.css" />
+  <title>Home</title>
+</head>
+
+<body>
+  <header class="menu__principal">
+    <img class="logo" src="./img/logo.jpg" alt="">
+    <nav class="menu__navegacao">
+      <div class="item-menu-linha">
+        <a href="./quemsomos/quemsomos.html" class="item-menu">Quem Somos?</a>
+      </div>
+      <div class="item-menu-linha">
+        <a href="./tbusuario/cadastrar.html" class="item-menu">Cadastre-se</a>
+        <a href="./tbusuario/login/login.html" class="item-menu">Login</a>
+      </div>
+    </nav>
+  </header>
+  <main class="principal">
+    <h1 class="Titulo__Principal">Lista Online</h1>
+    <p class="texto__principal">Lista Online é uma solução para seu dia a dia, Nele você pode cadastrar suas contas a
+      pagar e tarefas diárias de uma maneira prática e divertida!</p>
+    <p class="texto__principal">Com poucos cliques você tem todo controle sobre suas contas!</p>
+    <div class="container__telas">
+      <img class="tela-imagem" src="./img/telaconta.png"
+        alt="Imagem da tela de contas a pagar, contendo a descrição, valor e ações como botões alterar, excluir e adicionar novas contas">
+      <img class="tela-imagem" src="./img/novaconta.png"
+        alt="Imagem da tela de adicionar contas, solicitando a descrição, valor e ações como botões voltar e salvar nova conta">
+    </div>
+    <p class="texto__principal">Organize seu dia! Faça uma lista de atividades!</p>
+    <div class="container__telas">
+      <img class="tela-imagem" src="./img/listatarefa.png"
+        alt="Imagem da tela de lista de tarefas, contendo a descrição e ações como botões alterar, excluir e adicionar novas tarefas">
+      <img class="tela-imagem" src="./img/itenslista.png"
+        alt="Imagem da tela de Itens, contendo a descrição e ações como botões alterar, excluir e adicionar novos itens">
+    </div>
+    <p class="texto__principal">Cadastre-se! é Simples rápido e prático! tenha acesso de qualquer lugar com seu
+      smartphone!</p>
+    <a href="./tbusuario/cadastrar.html" class="btn-principal">Cadastre-se!</a>
+  </main>
+  <footer class="rodape">
+    <div class="rodape__container">
+      <p class="rodape__texto"></p>
+    </div>
+  </footer>
+  <script>
+    let data = new Date();
+    data = data.getFullYear();
+    document.querySelector(".rodape__texto").innerHTML = `Lista Online ${data} - Todos os Direitos Reservados.`;
+  </script>
+</body>
+
+</html>

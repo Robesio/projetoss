@@ -1,0 +1,148 @@
+@import "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
+
+:root {
+  --cor-de-fundo-menu: #0B2447;
+  --cor-da-fonte-menu: #ffffff;
+  --cor-de-fundo-corpo: #ddf7e3;
+  --cor-da-fonte-corpo: #0B2447;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body,
+html {
+  min-height: 100vh;
+  position: relative;
+  font-family: "Gill Sans Extrabold", Helvetica, sans-serif;
+}
+
+.titulodiv{
+  color: var(--cor-da-fonte-menu);
+}
+
+h1,
+h2 {
+  margin: 5px 0;
+  font-size: 22pt;
+  width: 99%;
+  text-align: center;
+  color: var(--cor-de-fundo-menu);
+}
+
+form {
+  margin-top: 20px;
+}
+
+.logo {
+  margin: 0;
+  width: 25%;
+  height: auto;
+}
+
+.menu__principal {
+  background-color: var(--cor-de-fundo-menu);
+  display: flex;
+  align-items: center;
+  padding: 0rem 0.25rem;
+}
+
+.menu__navegacao {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  margin: 0.5rem;
+  width: 100%;
+}
+
+.item-menu {
+  font-size: 1rem;
+  padding: 0.25rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--cor-da-fonte-menu);
+  width: 100%;
+  box-sizing: content-box;
+  white-space: nowrap;
+  text-align: center;
+}
+
+.item-menu-linha {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.6rem;
+}
+
+.rodape {
+  width: 100%;
+  position: absolute;
+  bottom: -5rem;
+  z-index: -1;
+  text-align: center;
+}
+
+.rodape__container {
+  height: 3rem;
+  padding: 0.3em;
+  background-color: var(--cor-de-fundo-menu);
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.rodape__texto {
+  margin-top: 1rem;
+  font-size: 1rem;
+  white-space: nowrap;
+  color: var(--cor-da-fonte-menu);
+  text-align: center;
+}
+
+.fa {
+  color: var(--cor-da-fonte-menu);
+  font-size: 2rem;
+}
+
+.Titulo__Principal {
+  font-size: 2rem;
+}
+
+@media screen and (min-width:800px) {
+  .logo {
+    width: 8rem;
+  }
+
+  .menu__navegacao {
+    height: 5rem;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .item-menu-linha {
+    display: inline-block;
+  }
+
+  .item-menu {
+    font-weight: 800;
+    padding: 2rem;
+  }
+
+  .item-menu:hover {
+    border-radius: 10px;
+    background-color: white;
+    color: var(--cor-de-fundo-menu);
+  }
+
+  .rodape__texto {
+    width: 390px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .fa-plus-square{
+    color: var(--cor-de-fundo-menu);
+  }
+}

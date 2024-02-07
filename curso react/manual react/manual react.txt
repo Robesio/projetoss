@@ -1,0 +1,353 @@
+Baixar nodejs: https://nodejs.org/en
+Verificar versões: noode -v npm -v
+Criar projeto react: https://create-react-app.dev/
+Comando para criar projeto: npx create-react-app my-app
+Acessar pasta do projeto: cd meu-projeto
+Comando para start projeto: npm start
+Comando para parar o projeto: ctrl + c - confirma com s
+Comando para instalar router rotas de link: npm install react-router-dom
+-------------------------------------------------------------------------
+import './App.css';
+import HelloWorld from './components/HelloWorld'; {/*Importa o arquivo de outra pasta */ }
+function App() {
+  const name = "Robesio"
+  const newName = name.toUpperCase()
+  const url = 'https://via.placeholder.com/150'
+  function div(a, b) {
+    return a / b
+  }
+  return (
+    <div className="App">
+      <h1>Meu projeto</h1>
+      <p>Olá, {newName}</p>
+      <p>Multiplica, {10 * 10}</p>
+      <p>Divide, {div(50, 10)}</p>
+      <img src={url} alt="Minha imagem" />
+      <HelloWorld />{/*Chama o arquivo de outra pasta */}
+    </div>
+  );
+}
+export default App;
+---------------------------------------------------------
+Usando props
+arquivo app.js <Pessoa nome="Robson" idade="29" profissao="Programador" foto="https://via.placeholder.com/150" />
+function Pessoa(props) {
+    return (
+        <div>
+            <img src={props.foto} alt={props.nome} />
+            <h2>Nome: {props.nome}</h2>
+            <p>Idade: {props.idade}</p>
+            <p>Profissão: {props.profissao}</p>
+        </div>
+    )
+}
+export default Pessoa
+------------------------------------------------------------
+Tirando o nome props e passando como nome as variaveis
+arquivo app.js <Pessoa nome="teste" idade="26" profissao="Programador" foto="https://via.placeholder.com/150" />
+function Pessoa({ nome, idade, profissao, foto }) {
+    return (
+        <div>
+            <img src={foto} alt={nome} />
+            <h2>Nome: {nome}</h2>
+            <p>Idade: {idade}</p>
+            <p>Profissão: {profissao}</p>
+        </div>
+    )
+}
+export default Pessoa
+-------------------------------------------------------------
+import styles from './Frase.module.css';
+function Frase() {
+    return (
+        <div className={styles.fraseContainer}>
+            <p className={styles.fraseContent}>Este e um componente com uma frase!</p>
+        </div>
+    )
+}
+export default Frase
+---------------------------------------------------------------
+import Item from "./Item"
+function List() {
+    return (
+        <>
+            <h1>Minha Lista</h1>
+            <ul>
+                <Item marca="Ferrari" ano={1990} />
+                <Item marca="Fiat" ano={1999} />
+                <Item />
+            </ul>
+        </>
+    )
+}
+export default List
+import PropTypes from 'prop-types'
+function Item({ marca, ano }) {
+    return (
+        <>
+            <li>{marca} - {ano}</li>
+        </>
+    )
+}
+isRequired obriga passar um valor para propriedade 
+Item.propTypes = {
+    marca: PropTypes.string.isRequired,
+    ano: PropTypes.number
+}
+Caso não tenha valor imprime algo definido
+Item.defaultProps = {
+    marca: "Faltou a marca",
+    ano: 0,
+}
+export default Item
+------------------------------------------------------------
+Trabalhando com eventos
+function Form() {
+    function cadastrarUsuario(e) {
+        e.preventDefault(); //Evita atualizar a pagina
+        console.log("Cadastrou com sucesso!")
+    }
+    return (
+        <>
+            <h1>Meu cadastro</h1>
+            <form onSubmit={cadastrarUsuario}>
+                <div>
+                    <input type="text" placeholder="Digite o seu nome" />
+                </div><br />
+                <div>
+                    <input type="submit" value="Cadastrar" />
+                </div>
+            </form>
+            <button onClick={meuEvento}>Ativar!</button>
+        </>
+    )
+}
+export default Form
+----------------------------------------------------------------
+Pegando valores do input
+import { useState } from 'react'
+function Form() {
+    function cadastrarUsuario(e) {
+        e.preventDefault(); //Evita atualizar a pagina
+        console.log(`Cadastrou com sucesso! ${nome} senha ${password}`)
+    }
+    //const [nome, setNome] = useState()    //Conforme for digitando no campo o evento onChange vai setando o valor
+    //const [nome, setNome] = useState('teste')  //Carregando o valor no input
+    const [nome, setNome] = useState()
+    const [password, setPassword] = useState()
+
+    return (
+        <>
+            <h1>Meu cadastro</h1>
+            <form onSubmit={cadastrarUsuario}>
+                <div>
+                    <label htmlFor="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" placeholder="Digite o seu nome" value={nome} onChange={(e) => setNome(e.target.value)} />
+                </div><br />
+                <div>
+                    <label htmlFor="password">Senha:</label>
+                    <input type="password" id="password" name="password" placeholder="Digite sua senha" onChange={(e) => setPassword(e.target.value)} />
+                </div><br />
+                <div>
+                    <input type="submit" value="Cadastrar" />
+                </div>
+            </form>
+        </>
+    )
+}
+export default Form
+-----------------------------------------------------------------
+Eventos passando evento para o botão e texto
+import Button from "./evento/button"
+function Evento() {
+    function meuEvento() {
+        console.log(`Ativando primeiro evento`)
+    }
+    function segundoEvento() {
+        console.log(`Ativando segundo evento`)
+    }
+    return (
+        <>
+            <p>Clique para disparar um evento:</p>
+            <Button event={meuEvento} text="Primeiro Evento" />
+            <Button event={segundoEvento} text="Segundo Evento" />
+        </>
+    )
+}
+export default Evento
+
+function Button(props) {
+
+    return <button onClick={props.event}>{props.text}</button> //Passa a function atraves do event - e o texto atarves do text
+}
+export default Button
+----------------------------------------------------------------------
+import { useState } from 'react'
+function Condicao() {
+    const [email, setEmail] = useState()    //seta o valor digitado no input atraves do setEmail e passa para a avariavel email
+    const [userEmail, setUserEmail] = useState()    
+
+    function enviarEmail(e) {
+        e.preventDefault()
+        setUserEmail(email) //pega o valor da variavel email e passa para setUserEmail
+    }
+    function limparEmail() {
+        setUserEmail()
+    }
+    return (
+        <>
+            <h2>Cadastre o seu email:</h2>
+            <form>
+                <div>
+                    <input type="email" placeholder="Digite o seu email" onChange={(e) => setEmail(e.target.value)} />
+                </div><br />
+                <button type='submit' onClick={enviarEmail}>Enviar-email</button>
+                {userEmail && ( //if se userEmail for verdadeiro executa caso seja falso não execulta bloco
+                    <div>
+                        <p>O email do usuario e: {userEmail}</p>
+                        <button onClick={limparEmail}>Limpar email</button>
+                    </div>
+                )}
+            </form>
+        </>
+    )
+}
+export default Condicao
+-----------------------------------------------------------------
+Redenrização de lista
+import OutraLista from './components/OutraLista';
+function App() {
+  const meusItens = ['React', 'vue', 'Angular']
+  return (
+    <div className="App">
+      <h1>Redenrização de Listas</h1>
+      <OutraLista itens={meusItens} />
+      <OutraLista itens={[]} />
+    </div>
+  );
+}
+function OutraLista({ itens }) {
+    return (
+        <>
+            <h3>Lista de coisas boa:</h3>
+
+            {itens.length > 0 ? (   //if se tiver itens na lista mostrar os itens
+                itens.map((item, index) => (
+                    <p key={index}>{item}</p>
+                ))) : ( //if não tiver itens na lista mostrar mensagem
+                <p>Não a itens na lista</p>
+            )}
+        </>
+    )
+}
+export default OutraLista
+----------------------------------------------------------------------
+State lift passando os valores no elemento pai
+function SeuNome({ setNome }) {
+    return (
+        <div>
+            <p>Digite seu nome:</p>
+            <input type="text" placeholder="Qual é seu nome?" onChange={(e) => setNome(e.target.value)} />
+        </div>
+    )
+}
+export default SeuNome
+function Saudacao({ nome }) {
+    function gerarSaudacao(algumNome) {
+        return `Ola, ${algumNome}, tudo bem?`
+    }
+    return (
+        <>
+            {nome && <p>{gerarSaudacao(nome)}</p>}
+        </>
+    )
+}
+export default Saudacao
+import './App.css';
+import { useState } from 'react'
+import SeuNome from './components/SeuNome';
+import Saudacao from './components/Saudacao';
+function App() {
+  const [nome, setNome] = useState()
+  return (
+    <div className="App">
+      <h1>State Lift</h1>
+      <SeuNome setNome={setNome} />
+      <Saudacao nome={nome} />
+    </div>
+  );
+}
+export default App;
+-------------------------------------------------------------------
+Trabalhando com rotas
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom'
+import Home from './components/pages/Home';
+import Contato from './components/pages/Contato';
+import Empresa from './components/pages/Empresa';
+import Navbar from './components/pages/Navbar';
+import Footer from './components/pages/Footer';
+function App() {
+  return (
+    <Router>
+      <Navbar />
+      <Routes>
+        <Route exact path="/" element={<Home />} />
+      </Routes>
+      <Routes>
+        <Route path="/empresa" element={<Empresa />} />
+      </Routes>
+      <Routes>
+        <Route path="/Contato" element={<Contato />} />
+      </Routes>
+      <Footer />
+    </Router>
+  )
+}
+export default App;
+import { Link } from "react-router-dom"
+import styles from './Navbar.module.css'
+
+function Navbar() {
+    return (
+        <>
+            <ul className={styles.list}>
+                <li className={styles.item}><Link to="/">Home</Link></li>
+                <li className={styles.item}><Link to="/empresa">Empresa</Link></li>
+                <li className={styles.item}><Link to="/contato">Contato</Link></li>
+            </ul>
+        </>
+    )
+}
+export default Navbar
+function Footer() {
+    return (<><p>Roda pé</p></>)
+}
+export default Footer
+function Home() {
+    return (
+        <div>
+            <h1>Home</h1>
+            <p>Conteudo da pagina home</p>
+        </div>
+    )
+}
+export default Home
+function Contato() {
+
+    return (
+        <div>
+            <h1>Contato</h1>
+            <p>Conteudo da pagina Contato</p>
+        </div>
+    )
+}
+export default Contato
+----------------------------------------------------------------------
+Trabalhando com icons: https://react-icons.github.io/react-icons/icons?name=fa
+Comando para iportar a biblioteca icons: npm install react-icons
+import { FaFacebook, FaInstagram, FaLinkedin } from 'react-icons/fa'
+<FaFacebook /><FaInstagram /><FaLinkedin />
+
+instalando dependencias para usar no prejeto
+            requisições   icons       rotas        gera id unico
+npm install json-server react-icons react-router-dom uuid

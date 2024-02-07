@@ -1,0 +1,11 @@
+https://www.youtube.com/watch?v=FXqX7oof0I4&list=PLnDvRpP8BneyVA0SZ2okm-QBojomniQVO
+criando projeto: npx create-react-app costs
+instalando dependencias para usar no prejeto
+            requisições   icons       rotas        gera id unico
+npm install json-server react-icons react-router-dom uuid
+---------------------------------------------------------------
+Criando API para simular banco de dados
+1º Criar db.json
+2º No arquivo package.json no objeto ( scripts colar "backend": "json-server --watch db.json --port 5000", )
+3º Comando para verificar o objeto vazio do db.json, abrir um novo terminal digitar (npm run backend) digitar a url
+http://localhost:5000/projects
